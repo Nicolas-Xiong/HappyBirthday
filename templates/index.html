@@ -5,18 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>生日快乐</title>
 <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
-<link type="text/css" rel="stylesheet" href="../static/css/style1.css" />
+<link type="text/css" rel="stylesheet" href="../static/css/style1.css">
 
 </head>
 
-<a href="{{ url_for('demo') }}">
+
 <body>
+<a href="{{ url_for('demo') }}">
+<audio controls loop autoplay="true" hidden="true">
+    <source src="../static/mp3/happybirthday.mp3">
+</audio>
+
 
 <div class="a3d"></div>
 
-<script src="../static/js/index.js"></script>
+<script src="../static/js/index.js">
+</script>
 
-</body>
 </a>
+</body>
+
 
 </html>
